@@ -41,7 +41,7 @@ body {
 }
 
 .about p {
-  max-width: 600px;
+  max-width: 60.0rem;
 }
 
 .hero {
@@ -63,9 +63,9 @@ body {
 }
 
 .hero h1 {
-  font-size: 35px;
+  font-size: 3.5rem;
   text-align: center;
-  line-height: 58px;
+  line-height: 5.8rem;
   font-weight: 400;
 }
 
@@ -82,14 +82,14 @@ header {
 
 header .navbar-brand {
   color: #fff;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 header .navbar-brand img {
-  max-width: 250px;
+  max-width: 25.0rem;
 }
 
 header .navbar-nav .nav-link {
@@ -99,6 +99,10 @@ header .navbar-nav .nav-link {
   font-weight: 500;
   font-family: 'Barlow', sans-serif;
   font-size: 1.7rem;
+}
+
+header .menu {
+  width: 3rem;
 }
 
 .sec-spacing {
@@ -119,13 +123,13 @@ header .navbar-nav .nav-link {
   text-align: center;
   padding: 3rem;
   border: 0;
-  max-width: 390px;
+  max-width: 39.0rem;
   margin: auto;
 }
 
 .features .card .icon {
-  width: 90px;
-  height: 90px;
+  width: 9.0rem;
+  height: 9.0rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,7 +145,7 @@ header .navbar-nav .nav-link {
   /* padding: 28px; */
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  margin-bottom: 20px;
+  margin-bottom: 2.0rem;
 }
 
 .features .card img {
@@ -161,7 +165,7 @@ header .navbar-nav .nav-link {
 
 .line {
   width: 10%;
-  height: 3px;
+  height: .3rem;
   background-color: #000;
   margin: auto;
   margin-bottom: 4rem;
@@ -172,7 +176,7 @@ header .navbar-nav .nav-link {
   border-color: var(--color);
   font-size: 1.8rem;
   text-transform: uppercase;
-  padding: 6px 1.5rem;
+  padding: .6rem 1.5rem;
 }
 
 .btn-primary.rounded {
@@ -188,8 +192,8 @@ header .navbar-nav .nav-link {
 }
 
 .testimonials .profile-img {
-  width: 90px;
-  height: 90px;
+  width: 9.0rem;
+  height: 9.0rem;
   overflow: hidden;
   border-radius: 50%;
   -o-object-fit: cover;
@@ -201,17 +205,17 @@ header .navbar-nav .nav-link {
 }
 
 .testimonials p {
-  font-size: 21px;
-  line-height: 35px;
+  font-size: 2.1rem;
+  line-height: 3.5rem;
   font-weight: 200;
-  max-width: 900px;
+  max-width: 90.0rem;
   margin: auto;
   margin-bottom: 3rem;
 }
 
 .testimonials .name {
-  font-size: 22px;
-  line-height: 35px;
+  font-size: 2.2rem;
+  line-height: 3.5rem;
 }
 
 .quick-contact {
@@ -231,8 +235,8 @@ header .navbar-nav .nav-link {
 }
 
 .quick-contact .card .title {
-  font-size: 20px;
-  margin-bottom: 10px;
+  font-size: 2.0rem;
+  margin-bottom: 1.0rem;
 }
 
 footer {
@@ -246,7 +250,7 @@ footer p {
 }
 
 .documents ul li {
-  padding-bottom: 13px;
+  padding-bottom: 1.3rem;
   list-style-type: none;
   font-size: 1.8rem;
 }
@@ -272,13 +276,13 @@ footer p {
 }
 
 .counts .card .number {
-  font-size: 50px;
+  font-size: 5.0rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 2.0rem;
 }
 
 .counts .card .title {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .partners {
@@ -286,7 +290,7 @@ footer p {
 }
 
 .partners img {
-  max-height: 45px;
+  max-height: 4.5rem;
 }
 
 .form-group {
@@ -294,6 +298,57 @@ footer p {
 }
 
 .form-control {
-  padding: 10px;
+  padding: 1.0rem;
+}
+
+.wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  header .apply-btn {
+    display: none;
+  }
+  header .navbar-nav {
+    background-color: #012639;
+  }
+  header .navbar-nav .nav-link {
+    padding: 1rem;
+  }
+  .hero {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .features .card {
+    margin-bottom: 3rem;
+  }
+  .counts .card {
+    border-bottom: 1px solid #ffffff4a;
+    padding-bottom: 4rem;
+    margin-bottom: 8rem;
+  }
+  .counts .card.last {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .quick-contact .card {
+    margin-bottom: 7rem;
+    border-bottom: 1px solid #a7a7a7;
+    border-radius: 0;
+    padding-bottom: 5rem;
+  }
+  .quick-contact .card.last {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
